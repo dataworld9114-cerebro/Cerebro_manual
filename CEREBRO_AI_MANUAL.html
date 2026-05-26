@@ -1506,10 +1506,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3521_1" class="md-nav__link">
+  <a href="#3531" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.5.2.1 모델 학습
+        3.5.3.1 모델 학습
       
     </span>
   </a>
@@ -1517,10 +1517,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3522_1" class="md-nav__link">
+  <a href="#3532" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.5.2.2 모델 분석
+        3.5.3.2 모델 분석
       
     </span>
   </a>
@@ -3185,10 +3185,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3521_1" class="md-nav__link">
+  <a href="#3531" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.5.2.1 모델 학습
+        3.5.3.1 모델 학습
       
     </span>
   </a>
@@ -3196,10 +3196,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3522_1" class="md-nav__link">
+  <a href="#3532" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.5.2.2 모델 분석
+        3.5.3.2 모델 분석
       
     </span>
   </a>
@@ -4083,8 +4083,10 @@
 
 <h5 id="3311-ai">3.3.1.1 AI전처리<a class="headerlink" href="#3311-ai" title="Permanent link">&para;</a></h5>
 <ul>
-<li>GPT가 사용자 데이터를 분석하고, 결측치, 중복값 을 자동으로 전처리 합니다.
-@@@@@ 결측값처리, 이상치처리, 형변환 을 한 데이터 </li>
+<li>GPT가 사용자 데이터를 분석하고, 결측치, 중복값 을 자동으로 전처리 합니다.<ul>
+<li>결측값처리, 이상치처리, 형변환 을 한 데이터 </li>
+</ul>
+</li>
 </ul>
 <p align = "center">
   <img src = "./Source/CEREBRO AI/4_분석/GIF/분석_전처리_AI전처리.gif">
@@ -4092,8 +4094,10 @@
 
 <h5 id="3312-ai">3.3.1.2 AI 직접입력<a class="headerlink" href="#3312-ai" title="Permanent link">&para;</a></h5>
 <ul>
-<li>GPT에게 전처리를 요청할 내역을 입력합니다.
-@@@@@"사기이면 1 아니면 0 인 컬럼을 만들어줘" 라고 한 결과</li>
+<li>GPT에게 전처리를 요청할 내역을 입력합니다.<ul>
+<li>" 사기이면 1 아니면 0 인 컬럼을 만들어줘" 라고 한 결과</li>
+</ul>
+</li>
 </ul>
 <p align = "center">
   <img src = "./Source/CEREBRO AI/4_분석/GIF/분석_전처리_AI직접입력.gif">
@@ -4707,12 +4711,13 @@
 </p>
 
 <h4 id="352">3.5.2 분류 모델 학습하기<a class="headerlink" href="#352" title="Permanent link">&para;</a></h4>
-<pre><code>분류 모델은 주어진 데이터를 바탕으로 미리 정해진 '카테고리(그룹)' 중 어디에 속하는지 맞히는 모델입니다.
-
-시험지를 보고 "합격(Pass)"인지 "불합격(Fail)"인지 채점하는 것과 같습니다.
-
-실제 적용 사례 : 고객 이탈 여부 예측, 이미지 인식(고양이/강아지 구별), 악성 종양 여부 진단
-</code></pre>
+<ul>
+<li>분류 모델은 주어진 데이터를 바탕으로 미리 정해진 '카테고리(그룹)' 중 어디에 속하는지 맞히는 모델입니다.<ul>
+<li>시험지를 보고 "합격(Pass)"인지 "불합격(Fail)"인지 채점하는 것과 같습니다.</li>
+<li>실제 적용 사례 : 고객 이탈 여부 예측, 이미지 인식(고양이/강아지 구별), 악성 종양 여부 진단</li>
+</ul>
+</li>
+</ul>
 <h5 id="3521">3.5.2.1 모델 학습<a class="headerlink" href="#3521" title="Permanent link">&para;</a></h5>
 <ul>
 <li>
@@ -4779,7 +4784,7 @@
 </ul>
 </li>
 </ul>
-<h5 id="3521_1">3.5.2.1 모델 학습<a class="headerlink" href="#3521_1" title="Permanent link">&para;</a></h5>
+<h5 id="3531">3.5.3.1 모델 학습<a class="headerlink" href="#3531" title="Permanent link">&para;</a></h5>
 <ul>
 <li>변수 선정 : Clustering(군집) 모델 생성 시 항목에 영향을 줄 수 있는 데이터를 선택합니다.  </li>
 <li>샘플데이터 열기를 클릭합니다.  </li>
@@ -4796,10 +4801,9 @@
 <li>모델생성 : 모델 생성을 클릭하여 선택한 알고리즘에 대한 모델학습을 수행합니다.</li>
 <li>모델생성이 완료되면 모델 분석버튼이 활성화 됩니다.  </li>
 </ul>
-<h5 id="3522_1">3.5.2.2 모델 분석<a class="headerlink" href="#3522_1" title="Permanent link">&para;</a></h5>
+<h5 id="3532">3.5.3.2 모델 분석<a class="headerlink" href="#3532" title="Permanent link">&para;</a></h5>
 <ul>
 <li>모델분석 : '모델분석'을 클릭하면 분석정보를 확인할 수 있습니다.  </li>
-<li>군집 : </li>
 <li>전체다운로드 클릭시 다운로드 됩니다.</li>
 <li>Plot : 산점도를 확인할 수 있습니다.</li>
 <li>다운로드 : 모델을 다운로드 할 수 있으며 python 소스코드를 확인합니다.</li>
