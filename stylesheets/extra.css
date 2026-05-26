@@ -1,0 +1,120 @@
+img {
+  max-width: 100%;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.md-typeset {
+    font-size: .7rem !important;
+}
+
+.md-typeset h2 {
+    font-weight: 700;
+}
+
+.md-typeset h3 {
+    font-weight: 600;
+}
+
+.md-typeset h4 {
+    font-size: 0.95rem;
+    font-weight: 650;
+    margin-bottom: 0.35rem;
+}
+
+.md-typeset ul > li {
+    font-size: 0.78rem !important;
+    opacity: 0.88 !important;
+    line-height: 1.65 !important;
+}
+
+.md-typeset h5 {
+    font-size: 0.9rem !important;
+}
+
+.md-typeset ul {
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 상단 바 배경색 */
+.md-header {
+  background-color: #c40000 !important;
+}
+
+/* 검색 영역 배경 */
+.md-search__form {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 왼쪽 로고 이미지 크기 */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 32px !important;
+  width: auto !important;
+}
+
+
+/* 전체 콘텐츠 폭 확장 */
+.md-grid {
+    max-width: 95% !important;
+}
+
+/* 본문 영역 넓히기 */
+.md-content {
+    max-width: 100% !important;
+}
+
+/* 중앙 콘텐츠 폭 제한 제거 */
+.md-main__inner {
+    max-width: 100% !important;
+}
+
+/* 상단 로고 숨김 */
+.md-header__button.md-logo {
+  display: none;
+}
+
+/* 햄버거 버튼을 로고 위치처럼 보이게 */
+.md-header__button[for="__drawer"] {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 햄버거 아이콘 대신 로고 이미지 표시 */
+.md-header__button[for="__drawer"] .md-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 기존 햄버거 SVG 숨김 */
+.md-header__button[for="__drawer"] .md-icon svg {
+  display: none;
+}
+
+/* 왼쪽 메뉴는 기본적으로 닫힌 drawer로 사용 */
+.md-sidebar--primary {
+  display: none;
+}
+
+/* drawer 열렸을 때 왼쪽 메뉴 표시 */
+[data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+  display: block;
+}
+
+.md-sidebar--secondary {
+  display: none;
+}
+
+/* Source라는 섹션 제목만 숨김 */
+.md-nav__item--section > .md-nav__link:has(.md-ellipsis) {
+    display: none !important;
+}
