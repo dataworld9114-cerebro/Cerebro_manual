@@ -4646,23 +4646,18 @@
 </tbody>
 </table>
 <h4 id="351">3.5.1 회귀 모델 학습하기<a class="headerlink" href="#351" title="Permanent link">&para;</a></h4>
-<pre><code>회귀 모델은 과거의 데이터를 바탕으로 연속된 '숫자(값)'를 예측하는 모델입니다.
-
-"이 정도 스펙의 아파트라면 매매가가 얼마 정도 할까?"를 추론하는 것과 같습니다.
-
-실제 적용 사례 : 매출액 전망, 원자재 가격 예측, 예상 방문자 수 추정
-</code></pre>
+<ul>
+<li>회귀 모델은 과거의 데이터를 바탕으로 연속된 '숫자(값)'를 예측하는 모델입니다.<ul>
+<li>"이 정도 스펙의 아파트라면 매매가가 얼마 정도 할까?"를 추론하는 것과 같습니다.</li>
+<li>실제 적용 사례 : 매출액 전망, 원자재 가격 예측, 예상 방문자 수 추정</li>
+</ul>
+</li>
+</ul>
 <h5 id="3511">3.5.1.1 모델 학습<a class="headerlink" href="#3511" title="Permanent link">&para;</a></h5>
 <ul>
-<li>
-<p>영향요인 선정 : 예측 항목에 영향을 줄 수 있는 데이터를 선택합니다.  </p>
-</li>
-<li>
-<p>샘플데이터 열기를 클릭합니다.  </p>
-</li>
-<li>
-<p>데이터를 확인하고 학습에 필요한 컬럼을 선정하여 선택합니다.</p>
-</li>
+<li>영향요인 선정 : 예측 항목에 영향을 줄 수 있는 데이터를 선택합니다.  </li>
+<li>샘플데이터 열기를 클릭합니다.  </li>
+<li>데이터를 확인하고 학습에 필요한 컬럼을 선정하여 선택합니다.</li>
 <li>예측항목 선정 : 예측할 데이터를 선택합니다.</li>
 <li>샘플데이터를 확인하여 학습결과로 예측할 항목을 선택합니다.</li>
 <li>샘플데이터 닫기를 클릭합니다.</li>
@@ -4676,7 +4671,7 @@
 <li>모델학습 : '모델학습'을 클릭하여 선택한 알고리즘에 대한 모델학습을 수행합니다.  </li>
 </ul>
 <p align = "center">
-  <img src = "./Source\4_분석\GIF\기계학습_회귀_1학습.gif">
+  <img src = "./Source/CEREBRO AI/4_분석/GIF/기계학습_회귀_1학습.gif">
 </p>
 
 <h5 id="3512">3.5.1.2 모델 튜닝<a class="headerlink" href="#3512" title="Permanent link">&para;</a></h5>
@@ -4737,10 +4732,11 @@
 <li>학습 데이터 비율 선정 : 학습에 사용되는 난수와 비율을 조정합니다.</li>
 <li>학습에 필요한 난수를 숫자로 입력합니다. 랜덤생성 버튼을 누르면 임의의 값이 설정됩니다.</li>
 <li>0~100사이의 숫자를 비율에 입력하거나 슬라이더를 드래그하여 학습과 테스트 데이터의 비율을 설정합니다.</li>
-<li>모델학습 : 모델 학습을 클릭하여 선택한 알고리즘에 대한 모델학습을 수행합니다.</li>
+<li>모델학습 : 모델 학습을 클릭하여 선택한 알고리즘에 대한 모델학습을 수행합니다.
+  <br>(준비중입니다.)</li>
 </ul>
 <p align = "center">
-  <img src = ".\Source\4_분석\GIF\기계학습_분류_1학습.gif">
+  <img src = "./Source/CEREBRO AI/4_분석/GIF/기계학습_분류_1학습.gif">
 </p>
 
 <h5 id="3522">3.5.2.2 모델 튜닝<a class="headerlink" href="#3522" title="Permanent link">&para;</a></h5>
@@ -4776,20 +4772,17 @@
 </p>
 
 <h4 id="353">3.5.3 군집 모델 학습하기<a class="headerlink" href="#353" title="Permanent link">&para;</a></h4>
-<pre><code>군집 모델은 아무런 정답(라벨)이 없는 상태에서, 데이터들의 순수한 유사성만을 따져서 비슷한 것끼리 묶어주는 모델입니다.
-
-"비슷한 옷을 입은 사람들끼리 알아서 모여보세요"라고 하는 것과 같습니다.
-
-실제 적용 사례 : 고객 세그먼트(타겟층) 분류, 추천 시스템을 위한 유사 아이템 그룹화
-</code></pre>
+<ul>
+<li>군집 모델은 아무런 정답(라벨)이 없는 상태에서, 데이터들의 순수한 유사성만을 따져서 비슷한 것끼리 묶어주는 모델입니다.<ul>
+<li>"비슷한 옷을 입은 사람들끼리 알아서 모여보세요"라고 하는 것과 같습니다.</li>
+<li>실제 적용 사례 : 고객 세그먼트(타겟층) 분류, 추천 시스템을 위한 유사 아이템 그룹화</li>
+</ul>
+</li>
+</ul>
 <h5 id="3521_1">3.5.2.1 모델 학습<a class="headerlink" href="#3521_1" title="Permanent link">&para;</a></h5>
 <ul>
-<li>
-<p>변수 선정 : Clustering(군집) 모델 생성 시 항목에 영향을 줄 수 있는 데이터를 선택합니다.  </p>
-</li>
-<li>
-<p>샘플데이터 열기를 클릭합니다.  </p>
-</li>
+<li>변수 선정 : Clustering(군집) 모델 생성 시 항목에 영향을 줄 수 있는 데이터를 선택합니다.  </li>
+<li>샘플데이터 열기를 클릭합니다.  </li>
 <li>
 <p>데이터를 확인하고 학습에 필요한 컬럼을 선정하여 선택합니다.</p>
 </li>
@@ -4817,26 +4810,30 @@
 </p>
 
 <h4 id="354">3.5.4 시계열 모델 학습하기<a class="headerlink" href="#354" title="Permanent link">&para;</a></h4>
-<pre><code>시계열 모델은 시간의 흐름(순서)에 따라 기록된 데이터를 분석하여, 미래의 특정 시점에 일어날 변화를 예측하는 모델입니다.
-
-어제, 오늘 날씨 변화 흐름을 보고 "내일은 비가 올까?"를 예측하는 일기예보와 같습니다.
-
-실제 적용 사례 : 주가 분석, 계절별 전력 수요 예측, 웹사이트 일일 트래픽 전망
-</code></pre>
-<p align = "center">
+<ul>
+<li>시계열 모델은 시간의 흐름(순서)에 따라 기록된 데이터를 분석하여, 미래의 특정 시점에 일어날 변화를 예측하는 모델입니다.<ul>
+<li>어제, 오늘 날씨 변화 흐름을 보고 "내일은 비가 올까?"를 예측하는 일기예보와 같습니다.</li>
+<li>실제 적용 사례 : 주가 분석, 계절별 전력 수요 예측, 웹사이트 일일 트래픽 전망</li>
+<li>(준비중입니다.)</li>
+</ul>
+</li>
+</ul>
+<!--p align = "center">
   <img src = "./Source/CEREBRO AI/4_분석/시계열.gif">
-</p>
+</p-->
 
 <h4 id="355">3.5.5  이상탐지 모델 학습하기<a class="headerlink" href="#355" title="Permanent link">&para;</a></h4>
-<pre><code>이상탐지 모델은 평범한 데이터 패턴에서 벗어난, 아주 드물게 발생하는 '특이하고 이상한 데이터'를 찾아내는 모델입니다.
-
-시험지를 보고 "합격(Pass)"인지 "불합격(Fail)"인지 채점하는 것과 같습니다.
-
-실제 적용 사례 : 금융 사기 탐지(FDS), 공장 장비의 고장 징후 예측, 네트워크 해킹 탐지
-</code></pre>
-<p align = "center">
+<ul>
+<li>이상탐지 모델은 평범한 데이터 패턴에서 벗어난, 아주 드물게 발생하는 '특이하고 이상한 데이터'를 찾아내는 모델입니다.<ul>
+<li>시험지를 보고 "합격(Pass)"인지 "불합격(Fail)"인지 채점하는 것과 같습니다.</li>
+<li>실제 적용 사례 : 금융 사기 탐지(FDS), 공장 장비의 고장 징후 예측, 네트워크 해킹 탐지</li>
+<li>(준비중입니다.)</li>
+</ul>
+</li>
+</ul>
+<!--p align = "center">
   <img src = "./Source/CEREBRO AI/4_분석/이상탐지.gif">
-</p>
+</p-->
 
 <p><br/>
 <br/></p>
@@ -4878,7 +4875,7 @@
 <li>분량 : 요약 / 표준 / 상세 중 하나를 선택합니다.</li>
 </ul>
 <p align = "center">
-  <img src="./Source\4_분석\GIF\보고서_2_AI작성 (1).gif">  
+  <img src="./Source/CEREBRO AI/4_분석/GIF/보고서_2_AI작성 (1).gif">  
 </p>
 
 <h4 id="412">4.1.2 데이터셋 선택<a class="headerlink" href="#412" title="Permanent link">&para;</a></h4>
@@ -4887,7 +4884,7 @@
 <li>여러 데이터셋을 선택할 수 있습니다.</li>
 </ul>
 <p align = "center">
-  <img src="./Source\4_분석\GIF\보고서_2_AI작성 (2).gif">  
+  <img src="./Source/CEREBRO AI/4_분석/GIF/보고서_2_AI작성 (2).gif">  
 </p>
 
 <h4 id="413">4.1.3 위젯 추천<a class="headerlink" href="#413" title="Permanent link">&para;</a></h4>
@@ -4898,7 +4895,7 @@
 <li>위젯을 선택하여 다음을 클릭합니다.</li>
 </ul>
 <p align = "center">
- <img src="./Source\4_분석\GIF\보고서_2_AI작성 (3).gif">  
+ <img src="./Source/CEREBRO AI/4_분석/GIF/보고서_2_AI작성 (3).gif">  
 </p>
 
 <h4 id="414">4.1.4 기존 대시보드 위젯 추가<a class="headerlink" href="#414" title="Permanent link">&para;</a></h4>
@@ -4907,7 +4904,7 @@
 <li>추가할 항목이 없는 경우 건너뛸 수 있습니다.</li>
 </ul>
 <p align = "center">
- <img src="./Source\4_분석\GIF\보고서_2_AI작성 (4).gif">  
+ <img src="./Source/CEREBRO AI/4_분석/GIF/보고서_2_AI작성 (4).gif">  
 </p>
 
 <h4 id="415">4.1.5 본문 생성<a class="headerlink" href="#415" title="Permanent link">&para;</a></h4>
@@ -4918,7 +4915,7 @@
 <li>수정 후 보고서 저장을 클릭합니다.</li>
 </ul>
 <p align = "center">
- <img src="./Source\4_분석\GIF\보고서_2_AI작성 (5).gif">  
+ <img src="./Source/CEREBRO AI/4_분석/GIF/보고서_2_AI작성 (5).gif">  
 </p>
 
 <h4 id="416-ai">4.1.6 생성된 AI 기반 보고서<a class="headerlink" href="#416-ai" title="Permanent link">&para;</a></h4>
@@ -4936,7 +4933,7 @@
 <li>저장 후 템플릿을 활용하여 보고서를 작성 할 수 있습니다.</li>
 </ul>
 <p align = "center">
-  <img src="./Source\4_분석\GIF\보고서_1_템플릿.gif">  
+  <img src="./Source/CEREBRO AI/4_분석/GIF/보고서_1_템플릿.gif">  
 </p>
 
 <h4 id="421">4.2.1 템플릿 보고서 만들기<a class="headerlink" href="#421" title="Permanent link">&para;</a></h4>
@@ -4947,7 +4944,7 @@
 <li>저장을 눌러 저장합니다.</li>
 </ul>
 <p align = "center">
-  <img src="./Source\4_분석\GIF\보고서_템플릿보고서만들기.gif">  
+  <img src="./Source/CEREBRO AI/4_분석/GIF/보고서_템플릿보고서만들기.gif">  
 </p>
 
 <h3 id="43">4.3 새로운 보고서 만들기<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
@@ -4960,7 +4957,7 @@
 <li>최신화를 통해 내부 위젯 데이터를 갱신할 수 있습니다.</li>
 </ul>
 <p align = "center">
- <img src="./Source\4_분석\GIF\보고서_빈보고서만들기.gif">  
+ <img src="./Source/CEREBRO AI/4_분석/GIF/보고서_빈보고서만들기.gif">  
 </p>
 
 <p><br/>
