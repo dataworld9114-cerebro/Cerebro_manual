@@ -7,37 +7,68 @@ img {
   margin: 0 auto;
 }
 
+/* 전체 본문 */
 .md-typeset {
-    font-size: .7rem !important;
+  font-size: 0.78rem !important;
+  line-height: 1.8;
 }
 
+/* 대제목 (#) */
+.md-typeset h1 {
+  font-size: 2rem !important;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+/* 중제목 (##) */
 .md-typeset h2 {
-    font-weight: 700;
+  font-size: 1.45rem !important;
+  font-weight: 750;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
 }
 
+/* 소제목 (###) */
 .md-typeset h3 {
-    font-weight: 600;
+  font-size: 1.15rem !important;
+  font-weight: 700;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
 }
 
+/* 세부제목 (####) */
 .md-typeset h4 {
-    font-size: 0.95rem;
-    font-weight: 650;
-    margin-bottom: 0.35rem;
+  font-size: 0.95rem !important;
+  font-weight: 650;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* 추가 세부제목 (#####) */
+.md-typeset h5 {
+  font-size: 0.85rem !important;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* 본문 */
+.md-typeset p,
+.md-typeset li {
+  font-size: 0.78rem !important;
+  line-height: 1.8;
+  opacity: 0.92;
+}
+
+/* 리스트 간격 */
+.md-typeset ul {
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
 }
 
 .md-typeset ul > li {
-    font-size: 0.78rem !important;
-    opacity: 0.88 !important;
-    line-height: 1.65 !important;
-}
-
-.md-typeset h5 {
-    font-size: 0.9rem !important;
-}
-
-.md-typeset ul {
-    margin-top: 0.2rem;
-    margin-bottom: 0.5rem;
+  font-size: 0.78rem !important;
+  opacity: 0.88 !important;
+  line-height: 1.65 !important;
 }
 
 /* 상단 바 배경색 */
@@ -45,76 +76,166 @@ img {
   background-color: #c40000 !important;
 }
 
-/* 검색 영역 배경 */
-.md-search__form {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-}
-
-/* 왼쪽 로고 이미지 크기 */
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
-  height: 32px !important;
-  width: auto !important;
-}
-
-
-/* 전체 콘텐츠 폭 확장 */
-.md-grid {
-    max-width: 95% !important;
-}
-
-/* 본문 영역 넓히기 */
-.md-content {
-    max-width: 100% !important;
-}
-
-/* 중앙 콘텐츠 폭 제한 제거 */
-.md-main__inner {
-    max-width: 100% !important;
-}
-
-/* 상단 로고 숨김 */
-.md-header__button.md-logo {
-  display: none;
-}
-
-/* 햄버거 버튼을 로고 위치처럼 보이게 */
+/* 햄버거 버튼 제거 */
 .md-header__button[for="__drawer"] {
-  display: flex !important;
-  align-items: center;
-  gap: 8px;
+  display: none !important;
 }
 
-/* 햄버거 아이콘 대신 로고 이미지 표시 */
-.md-header__button[for="__drawer"] .md-icon {
-  width: 40px;
+/* 검색 영역 제거 */
+.md-search {
+  display: none !important;
+}
+
+/* 기본 왼쪽 로고 제거 */
+.md-header__button.md-logo {
+  display: none !important;
+}
+
+/* 우측 상단 회사 로고 추가 */
+.md-header__inner::after {
+  content: "";
+  display: block;
+  width: 140px;
   height: 40px;
+
   background-image: url("../images/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+
+  margin-left: auto;
+
+  /* 로고를 흰색처럼 변환 */
+  filter: brightness(0) invert(1);
 }
 
-/* 기존 햄버거 SVG 숨김 */
-.md-header__button[for="__drawer"] .md-icon svg {
-  display: none;
+/* 전체 콘텐츠 폭 확장 */
+.md-grid {
+  max-width: 95% !important;
 }
 
-/* 왼쪽 메뉴는 기본적으로 닫힌 drawer로 사용 */
-.md-sidebar--primary {
-  display: none;
+.md-content {
+  max-width: 100% !important;
 }
 
-/* drawer 열렸을 때 왼쪽 메뉴 표시 */
-[data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
-  display: block;
+.md-main__inner {
+  max-width: 100% !important;
 }
 
-.md-sidebar--secondary {
-  display: none;
-}
+
 
 /* Source라는 섹션 제목만 숨김 */
 .md-nav__item--section > .md-nav__link:has(.md-ellipsis) {
-    display: none !important;
+  display: none !important;
+}
+
+/* 왼쪽 md 메뉴 전체 제거 */
+.md-sidebar--primary {
+  display: none !important;
+}
+
+/* 콘텐츠 영역 자동 확장 */
+.md-content {
+  margin-left: 0 !important;
+}
+
+/* 본문 전체 폭 사용 */
+.md-main__inner {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* 오른쪽 목차를 왼쪽으로 이동 */
+.md-sidebar--secondary {
+  order: -1;
+}
+
+/* 목차를 왼쪽에 붙이고 여백 조정 */
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  margin-left: 0;
+}
+
+/* 본문과 목차 간격 */
+.md-content {
+  margin-left: 1.5rem;
+}
+
+/* 메인 하단 커스텀설정*/
+.custom-footer {
+  background: #111;
+  color: #ddd;
+
+  padding: 24px 40px 18px;
+  margin-top: 60px;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* 상단 영역 */
+.footer-wrap {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* 로고 */
+.footer-logo img {
+  width: 180px;
+  filter: brightness(0) invert(1);
+}
+
+/* 연락처 */
+.footer-contact,
+.footer-company {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+/* 하단 저작권 */
+.footer-copy {
+  margin-top: 24px;
+
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+
+/* 상단 제목 영역 정리 */
+.md-header__title {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  flex-grow: 0 !important;
+}
+
+.custom-header-home {
+  color: #fff !important;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  margin-right: 14px;
+}
+
+.custom-header-home:hover {
+  opacity: 0.8;
+}
+
+.custom-header-separator {
+  color: rgba(255,255,255,0.5);
+  margin-right: 14px;
+}
+
+.custom-header-title {
+  color: #fff;
+
+  font-size: 0.95rem;
+  font-weight: 700;
 }

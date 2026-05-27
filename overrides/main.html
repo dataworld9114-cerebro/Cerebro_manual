@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block footer %}
+<footer class="custom-footer">
+
+  <div class="footer-wrap">
+
+    <!-- 로고 -->
+    <div class="footer-logo">
+      <a href="https://www.dataworld.co.kr" target="_blank">
+        <img src="{{ 'images/logo.png' | url }}">
+      </a>
+    </div>
+
+    <!-- 연락처 -->
+    <div class="footer-contact">
+      <div>전화. 042-488-9114</div>
+      <div>팩스. 042-488-7978</div>
+      <div>이메일문의. sales@dataworld.co.kr</div>
+    </div>
+
+    <!-- 회사 정보 -->
+    <div class="footer-company">
+      <div>대표자 : 박문일</div>
+      <div>본사 (35240) : 대전광역시 서구 둔산로 133 (현대아이텔) 221호 </div>
+      <div>세종지사 (30128) : 세종특별자치시 국세청로 4 (갤러리세종프라자) 712-1호</div>
+    </div>
+
+  </div>
+
+  <div class="footer-copy">
+    ⓒ Dataworld Ltd. All Rights Reserved.
+  </div>
+
+</footer>
+{% endblock %}
